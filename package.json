@@ -1,0 +1,39 @@
+{
+  "name": "mineralsAPI",
+  "version": "1.0.0",
+  "description": "An API for minerals and some rocks",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katedam/mineralsAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katedam/mineralsAPI/issues"
+  },
+  "homepage": "https://github.com/Katedam/mineralsAPI#readme",
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.7.1",
+    "nodemon": "^1.19.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5",
+    "morgan": "^1.9.1",
+    "node-html-parser": "^1.1.15",
+    "superagent": "^5.0.5",
+    "supertest": "^4.0.2"
+  }
+}
