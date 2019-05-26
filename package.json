@@ -7,8 +7,21 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "lint": "eslint .",
+    "jest": "jest --verbose --runInBand --detectOpenHandles",
+    "test": "npm run jest",
+    "test:watch": "npm run jest -- --watch",
+    "start": "node server.js",
+    "nodemon": "nodemon server.js",
+    "seed": "node seed.js",
+    "drop": "mongo mineralsAPI --eval 'db.dropDatabase()'",
+    "db-load-all": "npm run drop && npm run seed"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "identity-obj-proxy",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+    }
   },
   "repository": {
     "type": "git",
